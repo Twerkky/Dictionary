@@ -29,11 +29,9 @@
     z-index: 100; /* Убедитесь, что навбар находится выше других элементов */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Опционально, для лучшей видимости */
 }
-
  a{
     text-align: center;
  }
-
 .a-main {
     color: rgb(32, 32, 2); text-decoration: none;
    }
@@ -100,20 +98,33 @@
     display: block;
 }
 @media  (max-width: 480px) {
+    #dictionary h1{
+        font-size: large;
+    }
     
+    #dictionary h2{
+        font-size: 16px;
+    }
   
-      .navbar{
+    #dictionary dt{
+        font-size: medium;  
+    }
+    #dictionary dd{
+        font-size: medium;  
+    }
+
+    .navbar{
           height: 5vh;
           gap: 5px;
           font-size: 9px;
-            background-color: white;
+          background-color: white;
           
       }
-      .fixed {
+    .fixed {
         padding-top: 35px;
         margin: 0 11.5vw ;
       }
-      .search-in{
+    .search-in{
           width: 45px ;
           font-size: 7px;
           text-align: center;
@@ -121,6 +132,13 @@
       }
   }
 @media (min-width: 481px) and (max-width: 780px)  {
+ 
+    #dictionary h1{
+        font-size: x-large;
+    }
+    #dictionary h2{
+        font-size: 24px;
+    }
 
     .navbar{
         height: 5vh;
