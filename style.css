@@ -1,0 +1,141 @@
+.navbar{
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    font-size: x-large;
+    padding: 20px;
+    align-items: center;
+    margin: 0 10vw ;
+    background-color: aliceblue;
+    
+}
+.fixed {
+    position: fixed; /* Делает навбар фиксированным */
+    top: 0; /* Устанавливает навбар в верхней части страницы */
+    left: 0; /* Выравнивает навбар слева */
+    right: 0; /* Выравнивает навбар справа */
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    font-size: x-large;
+    padding: 20px;
+    align-items: center;
+    margin: 0; /* Убирает боковые отступы, так как навбар должен занять всю ширину */
+    background-color: aliceblue;
+    z-index: 100; /* Убедитесь, что навбар находится выше других элементов */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Опционально, для лучшей видимости */
+}
+
+.a-main {
+    color: rgb(32, 32, 2); text-decoration: none;
+   }
+.a-main:hover {
+    border-bottom: 4px solid rgb(5, 4, 4);
+   }
+.search-in{
+    width: 200px ;
+    height: 30px;
+    margin-left: 110px;
+}
+.main{
+    margin: 0 10vw ;
+    background-color: aliceblue;
+    
+}
+
+#dictionary h1{
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#dictionary h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#dictionary dt{
+    padding-left: 10px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+#dictionary dd{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+}
+/* Стили для выпадающего меню */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #dadada;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+@media  (max-width: 480px) {
+    
+  
+      .navbar{
+          height: 5vh;
+          gap: 5px;
+          font-size: 9px;
+          
+      }
+      .fixed {
+        padding-top: 35px;
+        margin: 0 11.5vw ;
+      }
+      .search-in{
+          width: 45px ;
+          font-size: 7px;
+          text-align: center;
+          margin-left: 10px;
+      }
+  }
+@media (min-width: 481px) and (max-width: 780px)  {
+
+    .navbar{
+        height: 5vh;
+        gap: 15px;
+        font-size: 14px;
+        
+    }
+    .fixed {
+        margin: 0 11.5vw ;
+    }
+    .search-in{
+        width: 100px ;
+        margin-left: 10px;
+    }
+    
+  }
+  @media (min-width: 781px) and (max-width: 1200px) {
+    
+    .search-in{
+        width: 200px ;
+        margin-left: 50px;
+    }
+  }
