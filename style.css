@@ -30,6 +30,10 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Опционально, для лучшей видимости */
 }
 
+ a{
+    text-align: center;
+ }
+
 .a-main {
     color: rgb(32, 32, 2); text-decoration: none;
    }
