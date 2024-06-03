@@ -8,14 +8,14 @@
     padding: 20px;
     align-items: center;
     margin: 0 10vw ;
-    background-color: aliceblue;
+    background-color: white;
     
 }
 .fixed {
-    position: fixed; /* Делает навбар фиксированным */
-    top: 0; /* Устанавливает навбар в верхней части страницы */
-    left: 0; /* Выравнивает навбар слева */
-    right: 0; /* Выравнивает навбар справа */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
     height: 5vh;
     display: flex;
     flex-direction: row;
@@ -24,10 +24,10 @@
     font-size: x-large;
     padding: 20px;
     align-items: center;
-    margin: 0; /* Убирает боковые отступы, так как навбар должен занять всю ширину */
-    background-color: aliceblue;
-    z-index: 100; /* Убедитесь, что навбар находится выше других элементов */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Опционально, для лучшей видимости */
+    margin: 0; 
+    background-color: white;
+    z-index: 100; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
 }
  a{
     text-align: center;
@@ -47,6 +47,35 @@
     margin: 0 10vw ;
     background-color: white;
     
+}
+
+#mainContent{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px 0px;
+    margin: 2vw;
+    text-align: justify;
+}
+#mainContent h1{
+    
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 #dictionary h1{
@@ -69,7 +98,7 @@
     font-family: 'Times New Roman', Times, serif;
     padding-bottom: 20px;
 }
-/* Стили для выпадающего меню */
+/* dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -130,6 +159,16 @@
           text-align: center;
           margin-left: 10px;
       }
+    #mainContent{
+        font-size: xx-small;
+       
+    }
+    #mainContent h1, h2{
+        font-size: medium;
+    }
+    #mainContent h2{
+        font-size: small;
+    }
   }
 @media (min-width: 481px) and (max-width: 780px)  {
  
@@ -142,8 +181,8 @@
 
     .navbar{
         height: 5vh;
-        gap: 15px;
-        font-size: 14px;
+        gap: 12px;
+        font-size: 11px;
         
     }
     .fixed {
@@ -153,12 +192,40 @@
         width: 100px ;
         margin-left: 10px;
     }
+    #mainContent{
+        font-size: small;
+       
+    }
+    #mainContent h1, h2{
+        font-size: large;
+    }
+    #mainContent h2{
+        font-size: medium;
+    }
     
   }
   @media (min-width: 781px) and (max-width: 1200px) {
-    
+    .navbar{
+        height: 5vh;
+        gap: 15px;
+        font-size: 14px;
+        
+    }
+    .fixed {
+        margin: 0 11.5vw ;
+    }
     .search-in{
-        width: 200px ;
+        width: 250px ;
         margin-left: 50px;
+    }
+    #mainContent{
+        font-size: medium;
+       
+    }
+    #mainContent h1, h2{
+        font-size: x-large;
+    }
+    #mainContent h2{
+        font-size: large;
     }
   }
