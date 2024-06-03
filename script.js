@@ -2,11 +2,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('first-link').addEventListener('click', function() {
         document.getElementById('first-content').style.display = 'block';
         document.getElementById('second-content').style.display = 'none';
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Добавляем плавную прокрутку
+        });
     });
 
     document.getElementById('second-link').addEventListener('click', function() {
         document.getElementById('first-content').style.display = 'none';
         document.getElementById('second-content').style.display = 'block';
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Добавляем плавную прокрутку
+        });
     });
 });
 document.getElementById('search-box').addEventListener('input', searchWords);
@@ -26,6 +34,3 @@ function searchWords() {
         entry.nextElementSibling.style.display = match ? "" : "none"; 
     }
 }
-
-
-
