@@ -7,46 +7,43 @@
     <script src="script.js"></script>
     <title>Словник</title>
 </head>
-<body >
+<body background="images/fon.jpg">
     <script>
-        window.onscroll = function() {
-    if (window.pageYOffset > 0) {
-        document.querySelector('.navbar').classList.add('fixed');
-    } else {
-        document.querySelector('.navbar').classList.remove('fixed');
-    }
-};
+            window.onscroll = function() {
+                if (window.pageYOffset > 0) {
+                    document.querySelector('.navbar').classList.add('fixed');
+                } else {
+                    document.querySelector('.navbar').classList.remove('fixed');
+                }
+            };
 
-        
-        // Добавляем обработчик события прокрутки к объекту window
-        window.addEventListener('scroll', handleScroll);
-        </script>
-    <nav class="navbar">
+            window.addEventListener('scroll', handleScroll);
+    </script>
+    <nav class="navbar" style="border: 1px solid black;">
         
         <div class="dropdown">
-            <a class="a-main" href="#dictionary" class="dropbtn">Словник</a>
+            <a class="a-main" id="a-dictionary" href="#dictionary" class="dropbtn">Словник</a>
             <div class="dropdown-content">
                 <a href="#first" id="first-link" style="font-size: small;">ОСНОВИ ТЕОРІЇ ПЕРЕКЛАДУ</a>
                 <a href="#second" id="second-link" style="font-size: small;">АСПЕКТИ ПЕРЕКЛАДОЗНАВСТВА</a>
             </div>
         </div>
-        <a class="a-main" href="#useful-info">Історична довідка</a>
-        <a class="a-main" href="">ноунейм</a>
-        <a class="a-main" href="#staff">Персоналії та їх роботи</a>
-        <input class="search-in" type="search" id="search-box" onkeyup="searchWords()" placeholder="Пошук">
-        
+        <a class="a-main" id="a-history" href="history.html">Історична довідка</a>
+        <a class="a-main" id="a-name" href="typology.html">Типологія перекладів</a>
+        <a class="a-main" id="a-personal" href="etic.html">Етика перекладача</a>
+        <input style="text-align: center;" class="search-in" type="search" id="search-box" onkeyup="searchWords()" placeholder="Пошук">
     </nav>
     <main class="main">
         <section id="dictionary">
             
             <div id="first-content" class="content">
                 <h1>ОСНОВИ ТЕОРІЇ ПЕРЕКЛАДУ</h1>
-                <h2>Адеквітність vs еквівалентність</h2>
+                <h2>Адекватність vs еквівалентність</h2>
                 <dl>
-                    <dt> <strong>Адекватність</strong> <i>(faithfulness)</i></dt>
+                    <dt> <strong>Адекватність</strong> <i>(adequacy)</i></dt>
                     <dd>- відповідність тексту тій реальності, яку відбиває мовний знак. (Сучасний лінгвістичний словник) </dd>
                     
-                    <dt><strong>Адекватний переклад</strong> <i>(faithful translatіоn)</i></dt>
+                    <dt><strong>Адекватний переклад</strong> <i>(adequate translation)</i></dt>
                     <dd>- переклад із комунікативним ефектом на максимально можливому рівні еквівалентності без порушення норм, узусу й жанрово-стилістичних вимог. (Комісаров)</dd>
                     
                     <dt><strong>Еквівалентність</strong> <i>(equivalence)</i></dt>
@@ -403,10 +400,9 @@
 
             </div>
         </section>
+        
     </main>
-    <footer class="footer">
-      
-    </footer>
+
     
 </body>
 </html>
